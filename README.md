@@ -3,7 +3,7 @@
 ```
 {
   "mcpServers": {
-    "calculator-server-YOURUSERNAME": {
+    "calculator-server": {
       "command": "uvx",
       "args": [
         "--from",
