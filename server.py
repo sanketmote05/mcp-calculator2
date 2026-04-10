@@ -1,19 +1,21 @@
 from mcp.server.fastmcp import FastMCP
 
-# Create the MCP server instance
-mcp = FastMCP("calculator-server")
+mcp = FastMCP("calculator")
+
 
 @mcp.tool()
-def add(a: float, b: float) -> str:
-    """Add two numbers together."""
-    result = a + b
-    return f"{a} + {b} = {result}"
+def add(a: float, b: float) -> float:
+    return a + b
+
 
 @mcp.tool()
-def multiply(a: float, b: float) -> str:
-    """Multiply two numbers together."""
-    result = a * b
-    return f"{a} x {b} = {result}"
+def multiply(a: float, b: float) -> float:
+    return a * b
+
+
+def main():
+    mcp.run()
+
 
 if __name__ == "__main__":
-    mcp.run()
+    main()
