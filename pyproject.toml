@@ -8,7 +8,7 @@ dependencies = [
 ]
 
 [project.scripts]
-calculator-server = "server:mcp.run"
+calculator-server = "server:main"
 
 [build-system]
 requires = ["hatchling"]
