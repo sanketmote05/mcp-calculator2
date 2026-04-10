@@ -1,4 +1,3 @@
-#pyproject.toml — BEFORE editing (the two red lines must be changed)
 [project]
 name = "calculator-server"
 version = "0.1.0"
