@@ -1,0 +1,16 @@
+#pyproject.toml — BEFORE editing (the two red lines must be changed)
+[project]
+name = "calculator-server"
+version = "0.1.0"
+description = "MCP Calculator Server"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+]
+
+[project.scripts]
+calculator-server = "server:mcp.run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
